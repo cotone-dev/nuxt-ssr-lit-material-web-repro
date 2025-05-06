@@ -1,0 +1,22 @@
+{
+  "name": "nuxt-ssr-lit-material-web-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@material/web": "2.3.0",
+    "nuxt": "3.16.2"
+  },
+  "devDependencies": {
+    "nuxt-ssr-lit": "1.6.30"
+  },
+  "overrides": {
+    "@lit-labs/ssr": "3.2.2"
+  }
+}
