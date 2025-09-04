@@ -15,8 +15,5 @@
   },
   "devDependencies": {
     "nuxt-ssr-lit": "1.6.32"
-  },
-  "overrides": {
-    "@lit-labs/ssr": "3.2.2"
   }
 }
