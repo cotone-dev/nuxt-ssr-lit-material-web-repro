@@ -10,13 +10,13 @@ In a production-like build environment (e.g., after running `bun run build && bu
 
 | Category       | Item          | Version       |
 | -------------- | ------------- | ------------- |
-| **OS**         | macOS         | 15.4.1        |
-| **Browser**    | Google Chrome | 136.0.7103.49 |
-| **Node.js**    | Node.js       | 23.11.0       |
-| **Bun**        | Bun           | 1.2.11        |
-| **Framework**  | Nuxt          | 3.16.2        |
-| **UI Library** | @material/web | 2.3.0         |
-| **SSR Helper** | nuxt-ssr-lit  | 1.6.30        |
+| **OS**         | macOS         | 15.6.1        |
+| **Browser**    | Google Chrome | 140.0.7339.81 |
+| **Node.js**    | Node.js       | 24.7.0        |
+| **Bun**        | Bun           | 1.2.21        |
+| **Framework**  | Nuxt          | 4.1.0         |
+| **UI Library** | @material/web | 2.4.0         |
+| **SSR Helper** | nuxt-ssr-lit  | 1.6.32        |
 
 ## Deployment Target
 

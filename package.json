@@ -10,11 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@material/web": "2.3.0",
-    "nuxt": "3.16.2"
+    "@material/web": "2.4.0",
+    "nuxt": "4.1.0"
   },
   "devDependencies": {
-    "nuxt-ssr-lit": "1.6.30"
+    "nuxt-ssr-lit": "1.6.32"
   },
   "overrides": {
     "@lit-labs/ssr": "3.2.2"

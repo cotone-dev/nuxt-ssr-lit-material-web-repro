@@ -1,4 +1,4 @@
-compatibility_date = "2025-05-06"
+compatibility_date = "2025-09-04"
 compatibility_flags = ["nodejs_compat"]
 name = "nuxt-ssr-lit-material-web-repro"
 pages_build_output_dir = "dist"
