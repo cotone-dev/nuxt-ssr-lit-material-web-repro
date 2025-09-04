@@ -93,37 +93,3 @@ export default defineNuxtConfig({
 ## Expected Behavior
 
 `@material/web` components should be usable in a Nuxt SSR environment without throwing an `HTMLElement is not defined` error during server-side rendering. The page should render correctly.
-
-## Note on `@lit-labs/ssr` Overrides
-
-In the `package.json` of this reproduction repository, there's an `overrides` section for `@lit-labs/ssr`:
-
-```json
-// package.json (snippet)
-"overrides": {
-  "@lit-labs/ssr": "0.8.0"
-}
-```
-
-This override is in place because, without it, the following error occurs during `bun run dev` (development mode):
-
-```
- ERROR  Cannot read properties of undefined (reading 'length')
-
-    at getLast (node_modules/@lit-labs/ssr/lib/render-value.js:523:28)
-    at renderTemplateResult (node_modules/@lit-labs/ssr/lib/render-value.js:381:31)
-    at renderTemplateResult.next (<anonymous>)
-    at renderValue (node_modules/@lit-labs/ssr/lib/render-value.js:296:12)
-    at renderValue.next (<anonymous>)
-    at renderTemplateResult (node_modules/@lit-labs/ssr/lib/render-value.js:340:16)
-    at renderTemplateResult.next (<anonymous>)
-    at renderValue (node_modules/@lit-labs/ssr/lib/render-value.js:296:12)
-    at renderValue.next (<anonymous>)
-    at LitElementRenderer.renderShadow (node_modules/@lit-labs/ssr/lib/lit-element-renderer.js:101:53)
-
-
- WARN  [nuxt] Failed to stringify dev server logs. Received DevalueError: Cannot stringify arbitrary non-POJOs. You can define your own reducer/reviver for rich types following the instructions in https://nuxt.com/docs/api/composables/use-nuxt-app#payload.
-```
-
-The version is pinned using `overrides` to suppress this development-time error.
-**Importantly, removing this override was also attempted, but it did not affect the main `500 HTMLElement is not defined` issue observed in the built environment.** This note is provided for complete context.
